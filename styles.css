@@ -1,4 +1,4 @@
-/* General Styles */
+
 html, body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -6,7 +6,7 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Fix background image */
+    background-attachment: fixed; 
     height: 80%;
   }
   

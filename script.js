@@ -12,7 +12,7 @@ const progressText = document.getElementById('progressText');
 const categorySelect = document.getElementById('category');
 
 let tasks = [];
-let currentFilter = 'all'; // 'all', 'incomplete', 'completed', 'Work', 'Personal', 'Urgent'
+let currentFilter = 'all'; 
 
 // Load tasks from localStorage
 if (localStorage.getItem('tasks')) {

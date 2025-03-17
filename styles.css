@@ -1,0 +1,153 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("/todo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fix background image */
+    height: 80%;
+  }
+  
+  #wrapper {
+    height: 70vh;
+    width: 600px;
+    margin: 250px auto;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  h2 {
+    color: #102770;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  input, select {
+    border-radius: 5px;
+    border: 2px solid #102770;
+    margin-top: 20px;
+    height: 2.5em;
+    width: calc(100% - 20px);
+    padding-left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  button {
+    margin-top: 20px;
+    background-color: #102770;
+    border-radius: 4px;
+    height: 44px;
+    font-weight: 600;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    border: none;
+    color: #ffeba7;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1f2029;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-buttons button {
+    flex: 1;
+    margin: 5px;
+  }
+  
+  /* Progress Container */
+  .progress-container {
+    margin: 20px 0;
+  }
+  
+  .progress-bar {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background: #76c7c0;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  .progress-text {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #102770;
+  }
+  
+  /* Todo List */
+  #todoList {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #102770;
+    transition: background 0.3s ease;
+    cursor: grab;
+  }
+  
+  .task.completed {
+    background: rgba(118, 199, 192, 0.8);
+    text-decoration: line-through;
+  }
+  
+  .task .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .task .actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #102770;
+    transition: color 0.3s ease;
+  }
+  
+  .task .actions button:hover {
+    color: #ffeba7;
+  }
+  
+  /* Scrollbar */
+  #todoList::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #todoList::-webkit-scrollbar-thumb {
+    background: #102770;
+    border-radius: 4px;
+  }
+  
+  #todoList::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.5);
+  }
